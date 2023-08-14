@@ -3,7 +3,7 @@
 		<img  src="https://user-images.githubusercontent.com/79182711/171509048-91800b54-de74-4dae-9924-3ce431a7cef2.png"  alt="Alpha EdTech"  title="Alpha EdTech"  width="250" />
 	</a>
 	<h1>
-		🚧 FastAPI com Python 👷‍♀️🎲 Estudando... 🚧
+		🚧 FastAPI com Python <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="25"/>  Estudando... 🚧
 	</h1>
 </div>
 
