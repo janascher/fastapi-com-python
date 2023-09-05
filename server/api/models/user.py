@@ -1,11 +1,13 @@
 from pydantic import BaseModel, SecretStr
 
+
 # Define o esquema de entrada (input) para os dados do usuário.
 class UserIn(BaseModel):
     id: int
     name: str
     email: str
     password: str
+    avatar: str
 
 # Define o esquema de saída (output) para os dados do usuário.
 class UserOut(BaseModel):
@@ -13,3 +15,4 @@ class UserOut(BaseModel):
     name: str
     email: str
     password: SecretStr
+    avatar: str

@@ -1,6 +1,5 @@
 from ..models.user import UserIn, UserOut
 from ..controllers.users import PasswordManager
-from pydantic import SecretStr
 
 password_manager = PasswordManager()
 
@@ -19,7 +18,8 @@ class UserManager:
             id=user.id,
             name=user.name,
             email=user.email,
-            password=hashed_password
+            password=hashed_password,
+            avatar=user.avatar
         )
         self.user_list.append(new_user)
         
@@ -33,7 +33,8 @@ class UserManager:
                     id=user.id,
                     name=user.name,
                     email=user.email,
-                    password=existing_user.password
+                    password=existing_user.password,
+                    avatar=user.avatar
                 )
                 self.user_list[index] = user_with_hashed_password
                 return {"message": "Usuário atualizado com sucesso"}
